@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <h6 class="heading">Withdraw Money</h6>
+    
+    <div class="form-group">
+        <label for="accountnumber">Account Number:</label>
+        <input class="form-control" type="text" name="accountnumber" placeholder="Enter account number"
+        [(ngModel)]="withdraw.accountnumber">
+    </div>
+
+    <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input class="form-control" type="number" name="amount" placeholder="Enter amount"
+        [(ngModel)]="withdraw.amount">
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="withdrawAmount()">Withdraw</button>
+    <div *ngIf="withdrawStatus">
+        <p>{{ withdrawStatus }}</p>
+      </div>
+</div>
+

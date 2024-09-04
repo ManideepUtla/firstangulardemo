@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <h6 class="heading">Login to your account</h6>
+    <div class="form-group">
+        <label for="cardnumber">Card Number:</label>  
+        <input class="form-control" type="text" name="cardnumber" placeholder="Enter card number"
+        [(ngModel)]="atm.cardnumber">
+    </div>
+
+    <div class="form-group">
+        <label for="pin">Pin:</label>
+        <input class="form-control" type="password" name="pin" placeholder="Enter pin"
+        [(ngModel)]="atm.pin">
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+</div>

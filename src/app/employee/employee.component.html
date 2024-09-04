@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Student Details</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>StudentId</th>
+                <th>Standard</th>
+                <th>Fees</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of student">
+                <td>{{student.name}}</td>
+                <td>{{student.stuId}}</td>
+                <td>{{student.standard}}</td>
+                <td>{{student.fees}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

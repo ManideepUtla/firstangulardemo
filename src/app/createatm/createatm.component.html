@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <h6 class="heading">Creating Atm {{cardNumber}}</h6>
+    <div class="form-group">
+    <label for="name">Pin:</label>
+    <input class="form-control" type="password" name="pin" placeholder="Enter pin"  
+    [(ngModel)]="atm.pin"></div>
+
+    <div class="form-group">
+    <label for="pan">cvv:</label>
+    <input class="form-control" type="text" name="cvv" placeholder="Enter your cvv"
+    [(ngModel)]="atm.cvv"></div>
+
+    <div class="form-group">
+    <label for="mobile">Expire:</label>
+    <input class="form-control" type="date" name="expire"
+    [(ngModel)]="atm.expire"></div>
+    
+    <div class="form-group">
+    <label for="balance">Account Number:</label>
+    <input class="form-control" type="text" name="balance" placeholder="Enter your AccountNumber"
+    [(ngModel)]="atm.accountnumber"></div>
+
+    <button type="submit" class="btn btn-primary" (click)="createatm()">Login</button>
+
+    
+
+</div>

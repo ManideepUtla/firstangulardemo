@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <h2 class="heading">Otp Form</h2>
+    <form #userForm="ngForm" (ngSubmit)="register(userForm)">
+          <div class="form-group">
+            <label for="age">Otp</label>
+            <input type="number" class="form-control" id="otp" name="otp" [(ngModel)]="otpDetails.otpNo" required min="20" max="60">
+           
+          </div>
+          <button type="submit" class="btn btn-primary">OTP Validation</button>
+        </form>
+      </div>
