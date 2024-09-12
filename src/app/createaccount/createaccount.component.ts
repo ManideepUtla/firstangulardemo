@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Account } from '../model/Account';
 import { AccountService } from '../account.service';
+import { Address } from '../model/Address';
 
 @Component({
   selector: 'app-createaccount',
@@ -10,7 +11,7 @@ import { AccountService } from '../account.service';
 export class CreateaccountComponent {
   accountNumber:String="TEST";
 
-  account=new Account('','','',0,'');
+  account=new Account('','','',0,'',new Address('','','','',''));
 
   constructor(private accountServce:AccountService){}
   
