@@ -12,11 +12,6 @@ export class UserregisterService {
   emitName(name:any):void{
     this.userNameBehaviorSubject.next(name);
   }
-
-
-
-
-
   private apiUrl = 'http://localhost:8080/api/';
 
   constructor(private http: HttpClient) { } //constructor injection Angular will creates the HttpCLient so we need to call httpclient soo we create constructor 
@@ -28,8 +23,6 @@ export class UserregisterService {
      });
 
   }
-
-
   
   saveUser(user: any) : Observable<Object>{
     const httpHeaders = {

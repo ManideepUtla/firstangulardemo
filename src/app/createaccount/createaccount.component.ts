@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Account } from '../model/Account';
 import { AccountService } from '../account.service';
 import { Address } from '../model/Address';
+import { AddressComponent } from '../address/address.component';
 
 @Component({
   selector: 'app-createaccount',
@@ -17,7 +18,10 @@ export class CreateaccountComponent {
   
  
 
-  createaccount(){
+  createaccount(custaddress:AddressComponent){
+    console.log('custaddress'+JSON.stringify(custaddress));
+
+    this.account.address=custaddress.address;
 
     console.log(JSON.stringify(this.account))
     this.accountServce.createAccount(this.account).subscribe(

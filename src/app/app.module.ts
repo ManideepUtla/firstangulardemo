@@ -20,6 +20,7 @@ import { CreateaccountComponent } from './createaccount/createaccount.component'
 import { CreateatmComponent } from './createatm/createatm.component';
 import { LoginComponent } from './login/login.component';
 import { WithdrawComponent } from './withdraw/withdraw.component';
+import { LoansearchComponent } from './loansearch/loansearch.component';
 
 
 @NgModule({
@@ -38,7 +39,9 @@ import { WithdrawComponent } from './withdraw/withdraw.component';
     CreateaccountComponent,
     CreateatmComponent,
     LoginComponent,
-    WithdrawComponent
+    WithdrawComponent,
+  
+    LoansearchComponent
   ],
   imports: [
     BrowserModule,
